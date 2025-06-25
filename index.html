@@ -2,18 +2,73 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Моё портфолио</title>
+    <title>Портфолио | Алина</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <div class="container">
-        <h1 class="mt-5 text-center">Привет, я начинающий разработчик!</h1>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Alina</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="#portfolio">Портфолио</a></li>
+        </ul>
     </div>
+</nav>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/script.js"></script>
+<header class="jumbotron text-center bg-light">
+    <h1 class="display-4">Привет! Я Алина Асиевская</h1>
+    <p class="lead">Начинающий веб-разработчик и студент 3 курса</p>
+</header>
+
+<section id="portfolio" class="bg-light py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Мои работы</h2>
+        <div class="row">
+            <!-- карточка 1 -->
+            <div class="col-md-4 mb-4">
+               
+                <a href="project1.html" target="_blank" class="text-decoration-none text-dark">
+                    <div class="card h-100">
+                        <img src="img/cityrun_logo.png" class="card-img-top" alt="Проект 1">
+                        <div class="card-body">
+                            <h5 class="card-title">City run</h5>
+                            <p class="card-text">3D-игра-раннер, разработанная на Unity с использованием C#</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!-- карточка 2 -->
+            <div class="col-md-4 mb-4">
+               
+                <a href="project2.html" target="_blank" class="text-decoration-none text-dark">
+                    <div class="card h-100">
+                        <img src="img/logo_2.png" class="card-img-top" alt="Проект 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Friends vs Animals</h5>
+                            <p class="card-text"> 2D-игра в жанре "защити базу", разработанная на Unity с использованием C#</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<footer class="bg-dark text-white text-center py-3">
+    © 2025 Алина
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
